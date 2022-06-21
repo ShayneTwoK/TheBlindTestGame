@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Std_Black";
+  src: url("src/assets/font/Std_Black.otf") format("opentype");
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 19px;
+  font-family: "Std_Black", sans-serif;
+  color: rgba(255,255,255,0.70);
+}
+
+img {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  pointer-events: none;
+}
+
+#texture {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: none;
+  transition-duration: 1s;
+  margin: 0;
+}
+
+#content {
+
+  height: 100%;
+  width: 100%;
+  border: none;
+  transition-duration: 1s;
+  margin: 0;
+}
+
+#box {
+  border: 4px rgba(29,29,27,.15) solid;
+  border-radius: 12px;
+  box-shadow: inset 0px 2px 0px 0px rgba(255,255,255,.15),0px 3px 0px 0px rgba(255,255,255,0.15);
+  width: 80%;
+  height: 90%;
+}
+
+#logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+

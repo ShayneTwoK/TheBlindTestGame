@@ -1,0 +1,78 @@
+<div id="content" class="d-flex"> <!-- div pour mettre une image transparente -->
+
+  <div id="texture" class="d-flex">
+
+    <div id="box">
+
+      <div id="logo" class="mt-4">
+        <img src="/assets/image/favicon_tbt/apple-touch-icon2.png">
+      </div>
+
+      <div id="startHome" class="row mt-4 mx-5 align-items-start justify-content-between">
+
+        <!-- Onglet Créer/Rejoindre une partie -->
+        <div id="createJoinParty" class="col-7">
+          <ul class="nav nav-tabs justify-content-evenly nav-justified" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active text-uppercase" id="home-tab" data-bs-toggle="tab" data-bs-target="#createParty" type="button" role="tab" aria-controls="createParty" aria-selected="true">Créer</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" data-bs-target="#joinParty" type="button" role="tab" aria-controls="joinParty" aria-selected="false">Rejoindre</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="createParty" role="tabpanel" aria-labelledby="home-tab">
+              <div class="d-flex flex-row">
+                <div class="col">
+                  contenue 1
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="joinParty" role="tabpanel" aria-labelledby="profile-tab">
+              contenue 2
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Carousel sur les bases du jeu -->
+        <div id="gamePresentation" class="col-4">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/image/favicon_tbt/android-chrome-192x192.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/favicon_tbt/android-chrome-192x192.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/favicon_tbt/android-chrome-192x192.png" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
