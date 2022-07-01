@@ -2,7 +2,6 @@ package com.theblindtest.demo.controllers;
 
 import com.theblindtest.demo.entities.Player;
 import com.theblindtest.demo.services.PlayerService;
-import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
