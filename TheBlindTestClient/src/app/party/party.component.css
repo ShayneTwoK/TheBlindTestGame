@@ -1,0 +1,42 @@
+#content {
+  background: linear-gradient(215deg, rgb(153, 16, 80) 0%, rgb(231, 77, 78) 85%);
+}
+
+#texture {
+  background-image: url(src/assets/image/textureGartic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#box-party {
+  width: 80%;
+  height: 90%;
+}
+
+.player-list {
+  height:150px;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+

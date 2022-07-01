@@ -18,13 +18,4 @@ public class TheBlindTestApplication {
 		SpringApplication.run(TheBlindTestApplication.class, args);
 	}
 
-	// Controller de test pour vérifier le deploy et l
-	@RestController
-	public static class HelloWorldController {
-
-		@GetMapping("/hello-world")
-		public  String helloWorld(){
-			return "Hello World";
-		}
-	}
 }

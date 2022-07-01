@@ -44,7 +44,7 @@ public class PlayerService {
 
     public String deletePlayer(long id) {
         playerRepository.deleteById(id);
-        return "player supprimé ! " + id;
+        return "player " + id + " supprimé !";
     }
 
 }
