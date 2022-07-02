@@ -15,21 +15,23 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 
 **Base de données** : MySQL
 
-<img src="https://user-images.githubusercontent.com/36078099/176978209-86a66e8f-f96f-49c6-b7fe-4ec944dcf332.png" title="Spring" alt="Spring" width="80"/>&nbsp; 
+<img src="https://user-images.githubusercontent.com/36078099/176978209-86a66e8f-f96f-49c6-b7fe-4ec944dcf332.png" width="80"/>&nbsp; 
 
 **Front** : TheBlindTestClient Angular 14
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" alt="Spring" width="70"/>&nbsp; 
+<img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" width="70"/>&nbsp; 
 
 **Back** : TheBlindTest Java 11
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" alt="Spring" width="80"/>&nbsp; 
+<img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" width="80"/>&nbsp; 
 
 **Architecture** : 3 layers
 
-**Système d'exploitation utilisé pour la configuration du projet ** : Windows
+<img src="https://user-images.githubusercontent.com/36078099/176978050-ff525261-e2c5-4249-bb4c-22d3f3a34d20.png" width="80"/>&nbsp;
 
-<img src="https://user-images.githubusercontent.com/36078099/176978050-ff525261-e2c5-4249-bb4c-22d3f3a34d20.png" alt="Spring" width="80"/>&nbsp;
+**Système d'exploitation utilisé pour la configuration du projet** : Windows
+
+<img src="https://github.com/devicons/devicon/blob/master/icons/windows8/windows8-original.svg" width="80"/>&nbsp;
 
 # :warning: Prérequis avant le premier lancement du projet
 
@@ -96,4 +98,4 @@ il doit directement vous afficher la page Swagger pour tester l'API.
 
 # Fonctionnement de l'application
 
-Tout d'aboord le user vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter. Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement.
+Tout d'abord le user vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter. Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement.
