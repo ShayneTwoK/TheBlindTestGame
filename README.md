@@ -93,3 +93,7 @@ il doit directement vous afficher la page Swagger pour tester l'API.
 <div align="center">
     <img src="https://media.giphy.com/media/msiYsnJG2ANFxXgZDW/giphy.gif" width="300"/>
 </div>
+
+# Fonctionnement de l'application
+
+Tout d'aboord le user vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter. Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement.
