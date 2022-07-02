@@ -25,11 +25,11 @@ public class RoomService {
         return roomRepository.findAll();
     }
 
-    public Room getRoomById(long id) {
+    public Room getRoomById(Long id) {
         return roomRepository.findById(id).orElse(null);
     }
 
-    public String deleteRoom(long id) {
+    public String deleteRoom(Long id) {
         roomRepository.deleteById(id);
         return "room supprimé ! " + id;
     }

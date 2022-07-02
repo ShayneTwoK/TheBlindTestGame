@@ -25,7 +25,7 @@ public class PlayerService {
         return playerRepository.findAll();
     }
 
-    public Player getPlayerById(long id) {
+    public Player getPlayerById(Long id) {
         return playerRepository.findById(id).orElse(null);
     }
 
@@ -42,7 +42,7 @@ public class PlayerService {
         return playerRepository.save(existingPlayer);
     }
 
-    public String deletePlayer(long id) {
+    public String deletePlayer(Long id) {
         playerRepository.deleteById(id);
         return "player " + id + " supprimé !";
     }

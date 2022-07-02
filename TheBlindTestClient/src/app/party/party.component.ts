@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCrown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-party',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./party.component.css']
 })
 export class PartyComponent implements OnInit {
+  // Icon
+  faCrown = faCrown;
 
   constructor() { }
 

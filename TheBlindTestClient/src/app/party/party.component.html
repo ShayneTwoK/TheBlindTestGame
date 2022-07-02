@@ -1,20 +1,99 @@
 <div id="content" class="d-flex"> <!-- div pour mettre une image transparente -->
 
-  <div id="texture" class="d-flex">
+  <div id="texture" class="d-flex"> <!-- div relief sur le fond -->
 
     <div class="box" id="box-party">
 
       <div id="logo" class="mt-4">
-        <img src="/assets/image/favicon_tbt/apple-touch-icon2.png">
+        <img src="/assets/image/favicon_tbt/apple-touch-icon2.png" alt="avatar">
       </div>
 
       <div id="startHome" class="row mt-5 mx-4 mb-4 align-items-start justify-content-between">
 
-        <div class="col-4 p-0 border border-primary text-uppercase title-bold">
-          <div class="border text-center mt-1 mb-4">joueurs 1/14</div>
-          <div class="border player-list mb-2">
+        <div id="player-box" class="col-3 p-0 text-uppercase ">
+
+          <div class="text-center mt-1 mb-3 title-bold">joueurs 1/14</div>
+
+          <div class="player-list mb-2">
+
+            <!-- ngFor display all users from the game -->
+
+            <div class="player-user">
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
+                </div>
+              </div>
+              <div class="col-8 ps-md-3 box-user-info">
+                <p class="text-blue text-cut-dot m-0">Shayne The Super Duper Hero</p>
+                <p class="text-cut-dot m-0 text-point">Points : 9999</p>
+              </div>
+              <div class="col-2 box-host">
+                <!-- ngIf isHost=true -->
+                <div class="icon-host">
+                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-user">
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
+                </div>
+              </div>
+              <div class="col-8 ps-md-3 box-user-info">
+                <p class="text-blue text-cut-dot m-0">Guitar Jobard</p>
+                <p class="text-cut-dot m-0 text-point">Points : 8740</p>
+              </div>
+              <div class="col-2 box-host">
+                <!-- ngIf isHost=true -->
+                <div class="icon-host">
+                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="player-user">
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
+                </div>
+              </div>
+              <div class="col-8 ps-md-3 box-user-info">
+                <p class="text-blue text-cut-dot m-0">Prideur le Cascadeur</p>
+                <p class="text-cut-dot m-0 text-point">Points : 6698</p>
+              </div>
+              <div class="col-2 box-host">
+                <!-- ngIf isHost=true -->
+                <div class="icon-host">
+                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="player-user">
+              <div class="col-2">
+                <div class="avatar">
+                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
+                </div>
+              </div>
+              <div class="col-8 ps-md-3 box-user-info">
+                <p class="text-blue text-cut-dot m-0">Rollar Costard</p>
+                <p class="text-cut-dot m-0 text-point">Points : 459</p>
+              </div>
+              <div class="col-2 box-host">
+                <!-- ngIf isHost=true -->
+                <div class="icon-host">
+                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
+                </div>
+              </div>
+            </div>
 
           </div>
+
         </div>
 
         <div class="col-3 border text-uppercase">

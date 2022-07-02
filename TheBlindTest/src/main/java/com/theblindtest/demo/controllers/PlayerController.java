@@ -50,7 +50,7 @@ public class PlayerController {
     }
 
     @GetMapping("api/v1/player/{id}")
-    public Player findPlayerById(@PathVariable long id){
+    public Player findPlayerById(@PathVariable Long id){
 
         logger.info( "Appel de la méthode findPlayerById avec l'id " + id);
 
@@ -74,7 +74,7 @@ public class PlayerController {
     }
 
     @DeleteMapping("api/v1/delete/{id}")
-    public String deletePlayer(@PathVariable long id){
+    public String deletePlayer(@PathVariable Long id){
 
         logger.info( "Appel de la méthode deletePlayer avec l'id " + id);
 
