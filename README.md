@@ -81,5 +81,5 @@ il doit directement vous afficher la page Swagger pour tester l'API.
     ng serve
     url : http://localhost:4200/
 <div align="center">
-    <img src="https://media.giphy.com/media/WrIhOdKOXixVBQ4rvZ/giphy.gif" width="300"/>
+    <img src="https://media.giphy.com/media/msiYsnJG2ANFxXgZDW/giphy.gif" width="300"/>
 </div>
