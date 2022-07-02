@@ -31,7 +31,7 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 
 <img src="https://user-images.githubusercontent.com/36078099/176978050-ff525261-e2c5-4249-bb4c-22d3f3a34d20.png" alt="Spring" width="80"/>&nbsp;
 
-# :warning: Prérequis avant le premier lancement du projet :warning:
+# :warning: Prérequis avant le premier lancement du projet
 
 ## :arrow_down_small: Cloner le projet
 
@@ -62,8 +62,8 @@ Lancer **MySQL Server**
 
 Crée une bdd appellée "bdd_tbt" en local qui aura par défaut :
 
-    identifiant : **root**
-    mot de passe : **root**
+    identifiant : root
+    mot de passe : root
     port : 3306
 
 ***NB**: Vous pouvez modifier cette configuration à votre convenance depuis le fichier **TheBlindTest/src/main/resources/application.properties*** pour rendre l'app compatible avec votre config SQL
@@ -74,6 +74,8 @@ pour une autre DB.
 Installer les dépendances du projet 
 
     mvn clean install -DskipTests
+
+# :globe_with_meridians: Lancement de l'application !
 
 ## :rocket: Lancer le serveur Tomcat Java
 
