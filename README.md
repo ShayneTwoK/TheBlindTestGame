@@ -27,6 +27,8 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 
 **Architecture** : 3 layers
 
+**Système d'exploitation utilisé pour la configuration du projet ** : Windows
+
 <img src="https://user-images.githubusercontent.com/36078099/176978050-ff525261-e2c5-4249-bb4c-22d3f3a34d20.png" alt="Spring" width="80"/>&nbsp;
 
 # :warning: Prérequis avant le premier lancement du projet :warning:
@@ -48,18 +50,24 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 - **MySQL**
 
 ``https://dev.mysql.com/downloads/installer/``
+Prendre la fonctionnalité "MySQLServer"
 
 - **Un IDE** (IntelliJ IDEA, VS Code..)
 
 ## :bricks: MySQL
 
-Lancer **MySQL Server** et crée une bdd appellée "bdd_tbt" en local
+Lancer **MySQL Server**
+ - Soit vous Lancez MySQLWorkbench et connectez-vous à votre instance local
+ - Soit vous enregistrer le chemin complet du bin MySQL Server dans vos variables d'environnements et lancer dans le cmd ``mysqld``
+
+Crée une bdd appellée "bdd_tbt" en local qui aura par défaut :
 
     identifiant : **root**
     mot de passe : **root**
     port : 3306
 
-***NB**: Vous pouvez modifier cette configuration à votre convenance depuis le fichier **TheBlindTest/src/main/resources/application.properties***
+***NB**: Vous pouvez modifier cette configuration à votre convenance depuis le fichier **TheBlindTest/src/main/resources/application.properties*** pour rendre l'app compatible avec votre config SQL
+pour une autre DB.
 
 ## :clipboard: Maven
 
