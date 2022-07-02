@@ -49,17 +49,17 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 
 ``https://dev.mysql.com/downloads/installer/``
 
-- Un IDE (IntelliJ IDEA, VS Code..)
+- **Un IDE** (IntelliJ IDEA, VS Code..)
 
 ## :bricks: MySQL
 
-Lancer MySQL Server et crée une bdd appellée "bdd_tbt" en local
+Lancer **MySQL Server** et crée une bdd appellée "bdd_tbt" en local
 
     identifiant : **root**
     mot de passe : **root**
     port : 3306
 
-*NB: Vous pouvez modifier cette configuration à votre convenance depuis le fichier **TheBlindTest/src/main/resources/application.properties***
+***NB**: Vous pouvez modifier cette configuration à votre convenance depuis le fichier **TheBlindTest/src/main/resources/application.properties***
 
 ## :clipboard: Maven
 
@@ -74,7 +74,7 @@ Installer les dépendances du projet
 
 il doit directement vous afficher la page Swagger pour tester l'API.
 
-*NB: Autre façon de tester après avoir lancer le serveur, en prenant ce lien ``http://localhost:8080/api-docs`` et l'importer sur Postman*
+***NB**: Autre façon de tester après avoir lancer le serveur, en prenant ce lien ``http://localhost:8080/api-docs`` et l'importer sur Postman*
 
 ## :rocket: Lancer le serveur npm Angular
 
