@@ -9,8 +9,8 @@
   
 # TheBlindTestGame
 
-<h3>Projet de cours sur les Web Services, le but de cette application est de jouer au jeu du Blind Test !</br></br>
-C'est à dire écouter des musiques en tout genres et tester ces connaissances ainsi que sa capacité à réagir, trouver le premier... et gagner le plus de point pour remporter la victoire !</h3>
+<p>Projet de cours sur les Web Services, le but de cette application est de jouer à un <b>PROTOTYPE</b> de jeu, celui du Blind Test !</br></br>
+C'est à dire écouter des musiques en tout genres et tester ces connaissances ainsi que sa capacité à réagir, trouver le premier... et gagner le plus de point pour remporter la victoire !</p>
 </br>
 
 **Base de données** : MySQL
@@ -32,6 +32,14 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 **Système d'exploitation utilisé pour la configuration du projet** : Windows
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/windows8/windows8-original.svg" width="80"/>&nbsp;
+
+**Documentation** : Swagger (OpenAPI3)
+
+![image](https://user-images.githubusercontent.com/36078099/177060611-55b84ba3-c3ad-4671-9917-92ac4250ab0e.png)
+
+Fichier Draw.io qui contient le schéma de la bdd, Maquette Prototype du site et les chemin associés => _TheBlindTestGame/TheBlindTest/Maquette_TheBlindTest.drawio_
+
+![Maquette_TheBlindTest drawio](https://user-images.githubusercontent.com/36078099/177060633-0bf425b1-68b0-4044-a794-c2c4ee27b568.png)
 
 # :warning: Prérequis avant le premier lancement du projet
 
