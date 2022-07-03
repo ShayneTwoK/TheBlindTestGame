@@ -98,4 +98,8 @@ il doit directement vous afficher la page Swagger pour tester l'API.
 
 # Fonctionnement de l'application
 
-Tout d'abord le user vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter. Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement.
+Pour l'instant seul, le jeu se joue en local et tout seul. J'ai préféré me concentrer sur l'essentiel à savoir construire une API, stocker mes joueurs en base, récupérer les infos et jouer au jeu.
+
+Le joueur vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter.
+
+Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement, un peu comme à la Gartic Phone ou Skribbl.io.
