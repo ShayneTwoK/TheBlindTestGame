@@ -12,85 +12,30 @@
 
         <div id="player-box" class="col-3 p-0 text-uppercase ">
 
-          <div class="text-center mt-1 mb-3 title-bold">joueurs 1/14</div>
+          <div class="text-center mt-1 mb-3 title-bold">joueurs {{players.length}}/10</div>
 
           <div class="player-list mb-2">
 
             <!-- ngFor display all users from the game -->
 
-            <div class="player-user">
+            <div class="player-user" *ngFor="let player of players">
               <div class="col-2">
                 <div class="avatar">
-                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
+                  <img src="{{randomImgGartic}}" alt="crown">
                 </div>
               </div>
               <div class="col-8 ps-md-3 box-user-info">
-                <p class="text-blue text-cut-dot m-0">Shayne The Super Duper Hero</p>
-                <p class="text-cut-dot m-0 text-point">Points : 9999</p>
+                <p class="text-blue text-cut-dot m-0">{{player.name}}</p>
+                <p class="text-cut-dot m-0 text-point">Points : {{player.point}}</p>
               </div>
               <div class="col-2 box-host">
                 <!-- ngIf isHost=true -->
-                <div class="icon-host">
+                <div class="icon-host" *ngIf="player.isHost">
                   <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
                 </div>
               </div>
             </div>
 
-            <div class="player-user">
-              <div class="col-2">
-                <div class="avatar">
-                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
-                </div>
-              </div>
-              <div class="col-8 ps-md-3 box-user-info">
-                <p class="text-blue text-cut-dot m-0">Guitar Jobard</p>
-                <p class="text-cut-dot m-0 text-point">Points : 8740</p>
-              </div>
-              <div class="col-2 box-host">
-                <!-- ngIf isHost=true -->
-                <div class="icon-host">
-                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="player-user">
-              <div class="col-2">
-                <div class="avatar">
-                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
-                </div>
-              </div>
-              <div class="col-8 ps-md-3 box-user-info">
-                <p class="text-blue text-cut-dot m-0">Prideur le Cascadeur</p>
-                <p class="text-cut-dot m-0 text-point">Points : 6698</p>
-              </div>
-              <div class="col-2 box-host">
-                <!-- ngIf isHost=true -->
-                <div class="icon-host">
-                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="player-user">
-              <div class="col-2">
-                <div class="avatar">
-                  <img src="https://garticphone.com/images/avatar/45.svg" alt="crown">
-                </div>
-              </div>
-              <div class="col-8 ps-md-3 box-user-info">
-                <p class="text-blue text-cut-dot m-0">Rollar Costard</p>
-                <p class="text-cut-dot m-0 text-point">Points : 459</p>
-              </div>
-              <div class="col-2 box-host">
-                <!-- ngIf isHost=true -->
-                <div class="icon-host">
-                  <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
-                </div>
-              </div>
-            </div>
 
           </div>
 

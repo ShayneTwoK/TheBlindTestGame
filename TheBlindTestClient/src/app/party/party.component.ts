@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faCrown } from '@fortawesome/free-solid-svg-icons';
+import {Player} from "../player/player";
+import {PlayerService} from "../player/player.service";
+import {HttpErrorResponse} from "@angular/common/http";
 
 @Component({
   selector: 'app-party',
@@ -7,12 +10,37 @@ import { faCrown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./party.component.css']
 })
 export class PartyComponent implements OnInit {
+
   // Icon
   faCrown = faCrown;
 
-  constructor() { }
+  public players: Player[];
+  public randomImgGartic: string;
 
-  ngOnInit(): void {
+  constructor(private playerService: PlayerService) {
+    this.players = [];
+    this.randomImgGartic = "";
   }
 
+  ngOnInit(): void {
+    this.getPlayers();
+    this.randomImgGartic = "https://garticphone.com/images/avatar/" + this.randomIntFromInterval(0, 45) + ".svg";
+
+  }
+
+  public getPlayers(): void {
+    this.playerService.getPlayers().subscribe(
+      (response: Player[]) => {
+        this.players = response;
+      },
+      (error: HttpErrorResponse) => {
+        alert(error.message);
+      }
+
+    )
+  }
+
+  public randomIntFromInterval(min: number, max: number) : number {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
 }

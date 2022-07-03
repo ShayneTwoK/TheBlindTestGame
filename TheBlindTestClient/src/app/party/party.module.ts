@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { PartyRoutingModule } from './party-routing.module';
 import { PartyComponent } from './party.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {PlayerService} from "../player/player.service";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     imports: [
         CommonModule,
         PartyRoutingModule,
-        FontAwesomeModule
-    ]
+        FontAwesomeModule,
+      HttpClientModule
+    ],
+  providers: [PlayerService]
 })
 export class PartyModule { }
