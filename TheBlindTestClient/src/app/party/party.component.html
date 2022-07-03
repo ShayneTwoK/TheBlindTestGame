@@ -16,8 +16,6 @@
 
           <div class="player-list mb-2">
 
-            <!-- ngFor display all users from the game -->
-
             <div class="player-user" *ngFor="let player of players">
               <div class="col-2">
                 <div class="avatar">
@@ -29,27 +27,100 @@
                 <p class="text-cut-dot m-0 text-point">Points : {{player.point}}</p>
               </div>
               <div class="col-2 box-host">
-                <!-- ngIf isHost=true -->
                 <div class="icon-host" *ngIf="player.isHost">
                   <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
                 </div>
               </div>
             </div>
 
-
           </div>
 
         </div>
 
-        <div class="col-3 border text-uppercase">
-          party
+        <div class="game-box col-4 row p-0 text-uppercase">
+          <div class="logo-music-style">
+
+            <div class="sonar-wrapper">
+              <div class="sonar-emitter">
+                <div class="sonar-wave sonar-wave1"></div>
+                <div class="sonar-wave sonar-wave2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress p-0" style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <!-- ngIf isMusicEnd -->
+          <div class="title-music mt-4 text-center">
+            <p>Hollow Knight - Dirthmouth - Christopher Larkin</p>
+          </div>
+
+          <!-- Form ngSubmit(checkMusicIsFound), dans player.com.ts -->
+          <div class="d-flex justify-content-center">
+            <input class="mt-2 input-type-general text-white text-center" type="text" spellcheck="false" placeholder="..."/>
+          </div>
+
         </div>
 
-        <div class="col-5 border border-dark text-uppercase">
-          tchat
+        <div class="tchat-box col-4 p-0 text-uppercase">
+
+            <div class="text-center mt-1 mb-3 title-bold">Tchat</div>
+
+            <div class="player-list mb-2">
+              <!-- ngIf isPlayerFindMusic -->
+              <div class="tchat-comment">
+                <div class="col-2 align-self-start">
+                  <div class="avatar">
+                    <img src="https://garticphone.com/images/avatar/{{this.randomIntFromInterval(0, 45)}}.svg" alt="avatar">
+                  </div>
+                </div>
+                <div class="col-10 ps-1 tchat-user-info">
+                  <p class="text-cut-dot m-0">Shayne</p>
+                  <p class="m-0 tchat-user-info-text">HA HA j'ai trouvé le mot ! Bonne chance les losers !</p>
+                </div>
+              </div>
+
+              <!-- else !isPlayerFindMusic -->
+              <p class="my-2 mx-2 tchat-user-info-text-bis">Shayne : Hollaw Knight</p>
+
+              <p class="my-2 mx-2 tchat-user-info-text-bis">Shayne : Yolo Night</p>
+              <p class="my-2 mx-2 tchat-user-info-text-bis">Shayne : Halo Noice</p>
+
+              <div class="tchat-comment">
+                <div class="col-2 align-self-start">
+                  <div class="avatar">
+                    <img src="https://garticphone.com/images/avatar/{{this.randomIntFromInterval(0, 45)}}.svg" alt="avatar">
+                  </div>
+                </div>
+                <div class="col-10 ps-1 tchat-user-info">
+                  <p class="text-cut-dot m-0 ">Fora</p>
+                  <p class="m-0 tchat-user-info-text">EZ</p>
+                </div>
+              </div>
+
+              <div class="tchat-comment">
+                <div class="col-2 align-self-start">
+                  <div class="avatar">
+                    <img src="https://garticphone.com/images/avatar/{{this.randomIntFromInterval(0, 45)}}.svg" alt="avatar">
+                  </div>
+                </div>
+                <div class="col-10 ps-1 tchat-user-info">
+                  <p class="text-cut-dot m-0 ">Axel</p>
+                  <p class="m-0 tchat-user-info-text">Le Best Mélomane de la game a encore frappé les gars !</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tchat-box-end">
+              <p class="tchat-stats">État de la partie</p>
+            </div>
+
         </div>
+
       </div>
-
 
       </div>
   </div>

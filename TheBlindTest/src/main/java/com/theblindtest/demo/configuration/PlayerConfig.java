@@ -28,8 +28,22 @@ public class PlayerConfig {
                     false
             );
 
+            Player roan = new Player(
+                    "Rohan",
+                    "hero",
+                    0,
+                    false
+            );
+
+            Player fora = new Player(
+                    "Fora",
+                    "licorn",
+                    0,
+                    false
+            );
+
             playerRepository.saveAll(
-                    List.of(shayne, axel)
+                    List.of(shayne, axel, roan, fora)
             );
 
         };
