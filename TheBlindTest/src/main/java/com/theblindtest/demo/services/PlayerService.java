@@ -34,7 +34,15 @@ public class PlayerService {
     }
 
     public Player updatePlayer(Player player) {
+
+        boolean isPlayerExist = playerRepository.existsById(player.getId());
+
+        if (!isPlayerExist) {
+            throw new IllegalStateException("le player avec l'id " + player.getId() + " n'existe pas.");
+        }
+
         Player existingPlayer = playerRepository.findById(player.getId()).orElse(null);
+
         existingPlayer.setName(player.getName());
         existingPlayer.setAvatar(player.getAvatar());
         existingPlayer.setPoint(player.getPoint());
@@ -43,6 +51,13 @@ public class PlayerService {
     }
 
     public String deletePlayer(Long id) {
+
+        boolean isPlayerExist = playerRepository.existsById(id);
+
+        if (!isPlayerExist) {
+            throw new IllegalStateException("le player avec l'id " + id + " n'existe pas.");
+        }
+
         playerRepository.deleteById(id);
         return "player " + id + " supprimé !";
     }
