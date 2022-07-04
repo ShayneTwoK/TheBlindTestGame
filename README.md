@@ -115,6 +115,8 @@ J'ai préféré me concentrer sur l'essentiel de ce qui à été demandé à sav
  - Stocker mes joueurs en base
  - Récupérer les infos et les afficher
  
+ La partie Front est peu utilisable mais la partie Back contient le nécessaire pour l'application.
+ 
 Le joueur vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter.
 
 Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement, un peu comme à la Gartic Phone ou Skribbl.io.
