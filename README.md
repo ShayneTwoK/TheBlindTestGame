@@ -31,15 +31,15 @@ C'est à dire écouter des musiques en tout genres et tester ces connaissances a
 
 **Système d'exploitation utilisé pour la configuration du projet** : Windows
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/windows8/windows8-original.svg" width="80"/>&nbsp;
+![image](https://user-images.githubusercontent.com/36078099/177215102-a1465b20-5012-4376-b471-502355d01863.png)
 
 **Documentation** : Swagger (OpenAPI3)
 
 ![image](https://user-images.githubusercontent.com/36078099/177060611-55b84ba3-c3ad-4671-9917-92ac4250ab0e.png)
 
-Fichier Draw.io qui contient le schéma de la bdd, Maquette Prototype du site et les chemin associés => _TheBlindTestGame/TheBlindTest/Maquette_TheBlindTest.drawio_
+Schéma de la bdd, Maquette Prototype du site, Endpoint renseigner pour chaque page dans l'url
 
-![Maquette_TheBlindTest drawio](https://user-images.githubusercontent.com/36078099/177060633-0bf425b1-68b0-4044-a794-c2c4ee27b568.png)
+![Maquette_TheBlindTest drawio](https://user-images.githubusercontent.com/36078099/177215209-b3dae0a7-91f9-4454-9f9e-772e9b93c7f0.png)
 
 # :warning: Prérequis avant le premier lancement du projet
 
@@ -106,8 +106,24 @@ il doit directement vous afficher la page Swagger pour tester l'API.
 
 # Fonctionnement de l'application
 
-Pour l'instant seul, le jeu se joue en local et tout seul. J'ai préféré me concentrer sur l'essentiel à savoir construire une API, stocker mes joueurs en base, récupérer les infos et jouer au jeu.
-
+Pour l'instant, l'application n'est que en local et aucun WebSocket n'a été intégrer, donc pas de Multi.
+J'ai préféré me concentrer sur l'essentiel de ce qui à été demandé à savoir :
+ - Modéliser une bdd avec Sprint Boot
+ - Construire une API RESTFul
+ - Gestion des codes d'erreurs et quelques logs
+ - Front basique avec utlisation de composant Angular, Routing, Service
+ - Stocker mes joueurs en base
+ - Récupérer les infos et les afficher
+ 
 Le joueur vas aller sur l'application de manière anonyme et n'a pas besoin de se connecter.
 
 Donc techniquement, celon ce principe, le user ne sera stocker dans la base que temporairement afin de suivre sa progression pour une session de jeu de BlindTest et faire du traitement, un peu comme à la Gartic Phone ou Skribbl.io.
+
+# Suite
+
+- Ajout de Tests Unitaires
+- Finalisation de toutes les pages comme représenté sur la maquette
+- Intégration API externe Youtube
+- Jeu en local avec Gameplay en place
+- WebSocket pour jouer en mutlijoueur
+- Docker pour un futur hébergement
