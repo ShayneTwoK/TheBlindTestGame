@@ -52,7 +52,7 @@ public class RoomService {
 
         roomRepository.deleteById(id);
 
-        return "player " + id + " supprimé !";
+        return "room " + id + " supprimé !";
     }
 
 }
