@@ -20,64 +20,6 @@
   box-shadow: inset 0 2px 0 0 rgb(255 255 255 / 15%), 0 5px 0 0 rgb(52 20 97);
 }
 
-.player-list {
-  overflow-y: scroll;
-  height: 35vh;
-}
-
-.player-user {
-  margin: 10px 10px;
-  border-radius: 100px 25px 25px 100px;
-  background-color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.avatar {
-  display: flex;
-  align-items: flex-end;
-  margin: 5px 0 5px 5px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid rgb(1, 36, 66);
-  background-color: rgb(234, 241, 253);
-}
-
-.box-user-info {
-  align-items: center;
-  justify-content: center;
-}
-
-.text-cut-dot {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.text-point {
-  font-size: 18px;
-  color: rgba(0,0,0,.6);
-  text-shadow: 3px 2px 3px rgba(255,255,255,.2);
-}
-
-.box-host {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-host {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(118, 97, 201);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-}
-
 /* CSS ANIMATION */
 
 /* SONAR WAVE*/
@@ -226,26 +168,6 @@
   border-radius: 5px;
   text-align: start;
   text-transform: none;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 

@@ -59,3 +59,50 @@ color: rgb(49 27 107);
   display: flex;
 }
 
+.avatar {
+  display: flex;
+  align-items: flex-end;
+  margin: 5px 0 5px 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(1, 36, 66);
+  background-color: rgb(234, 241, 253);
+}
+
+.text-cut-dot {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-point {
+  font-size: 18px;
+  color: rgba(0,0,0,.6);
+  text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+}
+
+.player-list {
+  overflow-y: scroll;
+  height: 35vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

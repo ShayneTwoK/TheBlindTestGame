@@ -1,0 +1,22 @@
+  <div class="text-center mt-1 mb-3 title-bold">joueurs {{players.length}}/10</div>
+
+  <div class="player-list mb-2">
+
+    <div class="player-user" *ngFor="let player of players">
+      <div class="col-2">
+        <div class="avatar">
+          <img src="https://garticphone.com/images/avatar/{{this.randomIntFromInterval(0, 45)}}.svg" alt="crown">
+        </div>
+      </div>
+      <div class="col-8 ps-md-3 box-user-info">
+        <p class="text-blue text-cut-dot m-0">{{player.name}}</p>
+        <p class="text-cut-dot m-0 text-point">Points : {{player.point}}</p>
+      </div>
+      <div class="col-2 box-host">
+        <div class="icon-host" *ngIf="player.isHost">
+          <fa-icon style="color: rgb(231 225 255)" [icon]="faCrown"></fa-icon>
+        </div>
+      </div>
+    </div>
+
+  </div>
